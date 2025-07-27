@@ -50,10 +50,3 @@ def test_divide(dividend, divisor, expected):
 def test_divide_by_zero(dividend, divisor):
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(dividend, divisor)
-
-@pytest.mark.parametrize("dividend, divisor", [
-    (0, 1)
-])
-def test_zero_divided(dividend, divisor):
-    with pytest.raises(ValueError, match="Zero cannot be divided"):
-        divide(dividend, divisor)
