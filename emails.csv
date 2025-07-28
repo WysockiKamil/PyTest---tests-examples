@@ -1,0 +1,5 @@
+email,expected
+jan.kowalski@wp.pl,True
+invalid-email,False
+test@com,False
+anna.nowak@gmail.com,True
