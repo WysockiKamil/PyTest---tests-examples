@@ -1,0 +1,12 @@
+[
+  { "email": "jan.kowalski@wp.pl", "status_code": 200, "expected_valid": true },
+  { "email": "anna.nowak@gmail.com", "status_code": 200, "expected_valid": true },
+  { "email": "invalid-email", "status_code": 400, "expected_valid": null },
+  { "email": "test@com", "status_code": 400, "expected_valid": null },
+  { "email": "@example.com", "status_code": 400, "expected_valid": null },
+  { "email": "test@", "status_code": 400, "expected_valid": null },
+  { "email": "test@wp..pl", "status_code": 400, "expected_valid": null },
+  { "email": 123, "status_code": 422, "expected_valid": null },
+  { "email": null, "status_code": 422, "expected_valid": null },
+  { "email": ["jan@wp.pl"], "status_code": 422, "expected_valid": null }
+]

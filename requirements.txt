@@ -1,5 +1,10 @@
-pytest,
-pytest-cov,
-pytest-mock,
-requests,
-csv
+pytest;
+pytest-cov;
+pytest-mock;
+requests;
+csv;
+httpx;
+email-validator;
+fastapi;
+pydantic;
+uvicorn;
